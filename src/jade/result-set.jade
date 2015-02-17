@@ -81,13 +81,14 @@ html(lang='en-GB')
                 | Image
               +header('imageoptim')
               +header('imagealpha-and-imageoptim')
+              +header('pngquant-and-imageoptim')
+              +header('imageoptim-by-zongxin')
               +header('jpegmini-and-imageoptim')
               +header('kraken')
               +header('codekit')
               +header('grunt-contrib-imagemin')
               +header('smushit')
               +header('tinypng')
-              +header('pngquant-and-imageoptim')
 
           tbody
             each imageResult in results
@@ -98,13 +99,14 @@ html(lang='en-GB')
                   |  #{imageResult.size} bytes
                 +column(imageResult['imageoptim'], imageResult, 'imageoptim')
                 +column(imageResult['imagealpha-and-imageoptim'], imageResult, 'imagealpha-and-imageoptim')
+                +column(imageResult['pngquant-and-imageoptim'], imageResult, 'pngquant-and-imageoptim')
+                +column(imageResult['imageoptim-by-zongxin'], imageResult, 'imageoptim-by-zongxin')
                 +column(imageResult['jpegmini-and-imageoptim'], imageResult, 'jpegmini-and-imageoptim')
                 +column(imageResult['kraken'], imageResult, 'kraken')
                 +column(imageResult['codekit'], imageResult, 'codekit')
                 +column(imageResult['grunt-contrib-imagemin'], imageResult, 'grunt-contrib-imagemin')
                 +column(imageResult['smushit'], imageResult, 'smushit')
                 +column(imageResult['tinypng'], imageResult, 'tinypng')
-                +column(imageResult['pngquant-and-imageoptim'], imageResult, 'pngquant-and-imageoptim')
 
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

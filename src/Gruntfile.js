@@ -111,12 +111,13 @@ module.exports = function(grunt) {
       'grunt-contrib-imagemin': 'grunt-contrib-imagemin',
       'imageoptim': 'ImageOptim',
       'imagealpha-and-imageoptim': 'ImageAlpha & ImageOptim',
+      'pngquant-and-imageoptim': 'PNGQuant & ImageOptim',
+      'imageoptim-by-zongxin': 'ImageOptim by Zongxin',
       'jpegmini-and-imageoptim': 'JPEGmini & ImageOptim',
       'kraken': 'Kraken',
       'photoshop': 'Photoshop',
       'smushit': 'Smushit',
-      'tinypng': 'TinyPNG',
-      'pngquant-and-imageoptim': 'pngquant & ImageOptim'
+      'tinypng': 'TinyPNG'
     };
     var filters = ['all', 'jpeg', 'png', 'gif'];
     var sortDirections = ['asc', 'desc'];
